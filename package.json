@@ -1,9 +1,10 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal blog and website",
+  "homepage": "https://ibbus93.github.io",
+  "version": "1.0.0",
+  "author": "Federico Ibba <federico.ibba9@gmail.com>",
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
@@ -19,7 +20,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "gh-pages": "^2.2.0"
   },
   "keywords": [
     "gatsby"
@@ -32,7 +34,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
