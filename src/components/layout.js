@@ -1,48 +1,34 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import styled from "styled-components"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+import "./layout.scss"
+import Sidebar from "./sidebar"
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+`
+
+const MainContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  background: #5094cf;
+`
+
+const Layout = ({ children }) => (
+  <AppContainer id="app-container">
+    <Sidebar />
+    <MainContent>
+      {children}
+    </MainContent>
+  </AppContainer>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

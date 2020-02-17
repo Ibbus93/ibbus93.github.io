@@ -1,0 +1,31 @@
+
+/*  #076eb6	(7,110,182)
+  #29aede	(41,174,222)
+  #062f87	(6,47,135)
+  #79858b	(121,133,139)
+  #7fbc03	(127,188,3)*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Open+Sans:400,600,700|Roboto:400,500,700&display=swap');
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+  font-family: 'Nunito', 'Open Sans', 'Roboto', 'sans-serif';
+}
+
+body {
+  margin: 0;
+}
+
+div[role="group"][tabindex] {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.gatsby-image-wrapper {
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+}
