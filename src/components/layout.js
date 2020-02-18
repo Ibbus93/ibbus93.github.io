@@ -19,6 +19,7 @@ const MainContent = styled.div`
   flex: 1;
   padding: 1rem;
   background: #F4FAFF;
+  margin-left: 400px;
 `
 
 const Layout = ({ children }) => (

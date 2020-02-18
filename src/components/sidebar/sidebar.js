@@ -10,8 +10,9 @@ import "./sidebar.scss"
 
 const StyledSidebar = styled.aside`
   height: 100%;
-  background: #206297;
+  position: fixed;
   max-width: 400px;
+  background: #206297;
 `
 
 const MainSidebar = styled.nav`
