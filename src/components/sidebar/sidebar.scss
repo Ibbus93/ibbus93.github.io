@@ -1,11 +1,38 @@
-aside > nav {
-  h2 {
-    margin-bottom: 0;
-    text-align: center;
-    color: #53ccff;
+aside {
+  display: flex;
+  flex-direction: column;
 
-    span {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    a {
+      padding: 1rem;
       color: #f5f8ff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+
+      &:visited {
+        color: #f5f8ff;
+      }
+    }
+
+    a:hover {
+      color: #53ccff;
+    }
+
+    h2 {
+      margin-bottom: 0;
+      text-align: center;
+      color: #53ccff;
+
+      span {
+        color: #f5f8ff;
+        font-size: 1.75rem;
+      }
     }
   }
 }

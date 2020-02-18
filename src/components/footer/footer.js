@@ -17,43 +17,47 @@ const StyledFooter = styled.footer`
 `
 
 const Footer = () => {
-  const { site: { profileLinks } } = useStaticQuery(
+  const { site: { siteMetadata: { profile: { links } } } } = useStaticQuery(
     graphql`
       query {
         site {
-          profileLinks {
-            email
-            github
-            linkedin
-            curriculumVitae        
+          siteMetadata {
+            profile {
+              links {
+                email
+                github
+                linkedin
+                curriculumVitae      
+              }  
+            }
           }
         }
       }
     `
   );
 
-  const { email, github, linkedin, curriculumVitae } = profileLinks;
+  const { email, github, linkedin, curriculumVitae } = links;
 
   return (
     <StyledFooter>
       <div>
-        <a href={github} target="_blank">
+        <a href={github} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
       </div>
       <div>
-        <a href={linkedin} target="_blank">
+        <a href={linkedin} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
       </div>
       <div>
-        <a href={curriculumVitae} target="_blank" >
-          <FontAwesomeIcon icon={faFilePdf} size="2x" />
+        <a href={`mailto:${email}`} rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </a>
       </div>
       <div>
-        <a href={`mailto:${email}`}>
-          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+        <a href={curriculumVitae} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFilePdf} size="2x" />
         </a>
       </div>
     </StyledFooter>

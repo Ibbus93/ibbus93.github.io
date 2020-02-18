@@ -18,8 +18,7 @@ const MainContent = styled.div`
   flex-direction: column;
   flex: 1;
   padding: 1rem;
-  // background: rgba(255, 255, 255, 0.8);
-  background: #cdcdcd;
+  background: #F4FAFF;
 `
 
 const Layout = ({ children }) => (
