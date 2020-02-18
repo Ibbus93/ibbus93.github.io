@@ -9,8 +9,8 @@ const StyledSidebar = styled.aside`
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #c5ccd2;
-  max-width: 350px;
+  background: #206297;
+  max-width: 400px;
 `
 
 const MainSidebar = styled.nav`
@@ -27,8 +27,8 @@ const Sidebar = () => (
     <MainSidebar>
       <Image />
       <h2>
-        <span>I am Federico</span>, <br/>
-        a frontend developer based in Cagliari, Italy
+        <span>Federico Ibba</span><br/>
+        Frontend developer based in Cagliari, Italy
       </h2>
     </MainSidebar>
     <Footer />

@@ -4,6 +4,12 @@ module.exports = {
     description: 'Portfolio and Blog about Federico Ibba, frontend developer',
     author: 'Ibbus93',
   },
+  profileLinks: {
+    email: 'federico.ibba9@gmail.com',
+    github: 'https://github.com/Ibbus93',
+    linkedin: 'https://www.linkedin.com/in/federicoibba/',
+    curriculumVitae: 'https://drive.google.com/open?id=1Yt7kiOeV51GMzqLKw-ESbN5vBx8EfZvi'
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
@@ -25,7 +31,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon.ico', // This path is relative to the root of the site.
       },
     },
   ],

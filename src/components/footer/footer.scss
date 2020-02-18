@@ -1,11 +1,13 @@
-a {
-  color: #000;
+footer {
+  a {
+    color: #f5f8ff;
 
-  & :visited {
-    color: rebeccapurple;
-  }
+    & :visited {
+      color: rebeccapurple;
+    }
 
-  & :hover {
-    color: #076eb6;
+    & :hover {
+      color: #53ccff;
+    }
   }
 }

@@ -15,6 +15,11 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 
 body {
   margin: 0;
+  //background: url("../images/background.svg");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #08416f;
 }
 
 div[role="group"][tabindex] {
@@ -26,6 +31,6 @@ div[role="group"][tabindex] {
 
 .gatsby-image-wrapper {
   border-radius: 50%;
-  width: 200px;
+  width: 150px;
   height: auto;
 }
